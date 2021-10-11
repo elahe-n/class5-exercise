@@ -5,5 +5,13 @@ alias goroot="cd / && echo 'You are in the root folder'"
 alias showcontent="ls && echo 'The content of your folder has been shown.'"
 alias whereami="pwd && echo 'You are in this path.'"
 
+function helpme {
+echo "use command man to know more about commands: man command name, like: man ls "
+}
+
+function whatis {
+    type $1 && echo "You can alse use man $1 and enter to know more..."
+}
+
 
 
