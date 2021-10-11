@@ -1,1 +1,9 @@
-echo "Hello, This is my terminal; Write your comments and ENTER... (The defult shell program is bash)"
+echo "Hello, This is my terminal; Write your commands and ENTER... (The defult shell program is bash)"
+
+alias goback="cd .. && echo 'You are in the parent folder'"
+alias goroot="cd / && echo 'You are in the root folder'"
+alias showcontent="ls && echo 'The content of your folder has been shown.'"
+alias whereami="pwd && echo 'You are in this path.'"
+
+
+
