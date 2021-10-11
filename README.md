@@ -23,7 +23,7 @@ rmdir my-nonexistent-folder || echo "Whoops, cannot delete a folder that does no
 
 5. Write the command (or commands) that will navigate to your desktop, and then to the parent folder of the desktop.
 1: By running 2 commands after each other:  
-cd ~/Desktop 
-cd ..
+first run this command: cd ~/Desktop 
+second run this command: cd ..
 2: Or by running one command. if first part executed successfully, second part will be executed.
 cd ~/Desktop && cd ..
