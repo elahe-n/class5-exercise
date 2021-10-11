@@ -5,13 +5,28 @@ alias goroot="cd / && echo 'You are in the root folder'"
 alias showcontent="ls && echo 'The content of your folder has been shown.'"
 alias whereami="pwd && echo 'You are in this path.'"
 
-function helpme {
-echo "use command man to know more about commands: man command name, like: man ls "
+function sc {
+ source .bash-profile
 }
 
 function whatis {
-    type $1 && echo "You can alse use man $1 and enter to know more..."
+    type $1 && which $1 && echo "You can alse use man $1 and enter to know more..."
 }
+
+function cfi {
+    touch $1 && echo "$1 has been created."
+}
+
+function dfi {
+    rm $1 && echo "$1 has been deleted."
+}
+
+function showfi {
+    cat $1 && echo "The content of $1 has been shown."
+}
+
+
+
 
 
 
